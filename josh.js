@@ -3,7 +3,17 @@ const object1 = {
   duh: "bruh",
   brown: "people",
 };
-
+function parsedArray(text){
+  const splitArray = text.split(" ");
+  const parsedArr = [];
+  let x = 0;
+  for(let i = 0; i < splitArray.length; i++)
+  {
+    x = Number(splitArray[i]);
+    parsedArr.push(x);
+  }
+  return parsedArr;
+}
 function myLastIndexOf(target, arr) {
   let lastIndex = 0;
   if (arr.includes(target)) {
@@ -42,3 +52,11 @@ console.log("Second Test: ", grabKeys(object1));
 console.log("----------------------------");
 
 console.log("Third Test: ", grabValues(object1));
+console.log("----------------------------");
+console.log("Fourth Test: ", parsedArray("1 2 3 4 5"));
+
+
+
+document.getElementById("lastIndexButton").onClick = function() {
+  
+}
