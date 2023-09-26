@@ -11,7 +11,7 @@
 		<div class="myEach">
 			<div id="input_myEach">
 				<br />
-				<h3 id="po">Input Array Elements of Type Integer</h3>
+				<h3 id="header">Input Array Elements of Type Integer</h3>
 				<form class="" action="abdullah.html" method="post">
 					<input type="number" name="array1[]" value="" /><br />
 					<input type="number" name="array1[]" value="" /><br />
@@ -20,7 +20,13 @@
 					<input type="number" name="array1[]" value="" /><br />
 				</form>
 			</div>
-			<div id="argument_myEach"></div>
+			<div id="argument_myEach">
+				<p>
+					The function invoked on this specific array multiplies each
+					element by 2, and then pushes each element into a result
+					array.
+				</p>
+			</div>
 			<div id="result_myEach">
 				<p id="originalArray1"></p>
 				<p id="resultArray1"></p>
@@ -33,7 +39,7 @@
 		<div class="myMap">
 			<div id="input_myMap">
 				<br />
-				<h3 id="po">Input Array Elements of Type Integer</h3>
+				<h3 id="header">Input Array Elements of Type Integer</h3>
 				<form class="" action="abdullah.html" method="post">
 					<input type="number" name="array2[]" value="" /><br />
 					<input type="number" name="array2[]" value="" /><br />
@@ -42,7 +48,9 @@
 					<input type="number" name="array2[]" value="" /><br />
 				</form>
 			</div>
-			<div id="argument_myMap"></div>
+			<div id="argument_myMap">
+				<p>This function creates a new result array and.</p>
+			</div>
 			<div id="result_myMap">
 				<p id="originalArray2"></p>
 				<p id="resultArray2"></p>
@@ -54,21 +62,27 @@
 
 		<div class="myFilter">
 			<div id="input_myFilter">
-				<h3 id="po">Input Array Elements of Type String</h3>
+				<h3 id="header">Input Array Elements of Type String</h3>
 				<form class="" action="abdullah.html" method="post">
 					<input type="text" name="array3[]" value="" /><br />
 					<input type="text" name="array3[]" value="" /><br />
 					<input type="text" name="array3[]" value="" /><br />
 					<input type="text" name="array3[]" value="" /><br />
 					<input type="text" name="array3[]" value="" /><br />
-					<button type="button" name="submit3" onclick="Geeks()">
-						Submit
-					</button>
 				</form>
 			</div>
 			<div id="argument_myFilter"></div>
-			<div id="result_myFilter"></div>
-			<button id="run_myFilter">Demonstrate "myFilter" Function</button>
+			<div id="result_myFilter">
+				<p id="originalArray3"></p>
+				<p id="resultArray3"></p>
+			</div>
+			<button id="run_myFilter" onclick="demo3()">
+				Demonstrate "myMap" Function
+			</button>
+		</div>
+
+		<div>
+			<a href="index.html"> Back To Home Page</a>
 		</div>
 	</body>
 </html>
