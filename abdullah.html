@@ -5,28 +5,70 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="css/abdullah.css" />
 		<title>Abdullah's Functions</title>
-		<script src="app.js"></script>
+		<script src="abdullah.js"></script>
 	</head>
-	<body>
-		<div id="myEach">
-			<div id="input"></div>
-			<div id="argument"></div>
-			<div id="result"></div>
-			<button id="run_myEach"></button>
+	<body style="text-align: center">
+		<div class="myEach">
+			<div id="input_myEach">
+				<br />
+				<h3 id="po">Input Array Elements of Type Integer</h3>
+				<form class="" action="abdullah.html" method="post">
+					<input type="number" name="array1[]" value="" /><br />
+					<input type="number" name="array1[]" value="" /><br />
+					<input type="number" name="array1[]" value="" /><br />
+					<input type="number" name="array1[]" value="" /><br />
+					<input type="number" name="array1[]" value="" /><br />
+				</form>
+			</div>
+			<div id="argument_myEach"></div>
+			<div id="result_myEach">
+				<p id="originalArray1"></p>
+				<p id="resultArray1"></p>
+			</div>
+			<button id="run_myEach" onclick="demo1()">
+				Demonstrate "myEach" Function
+			</button>
 		</div>
 
-		<div id="myMap">
-			<div id="input"></div>
-			<div id="argument"></div>
-			<div id="result"></div>
-			<button id="run_myMap"></button>
+		<div class="myMap">
+			<div id="input_myMap">
+				<br />
+				<h3 id="po">Input Array Elements of Type Integer</h3>
+				<form class="" action="abdullah.html" method="post">
+					<input type="number" name="array2[]" value="" /><br />
+					<input type="number" name="array2[]" value="" /><br />
+					<input type="number" name="array2[]" value="" /><br />
+					<input type="number" name="array2[]" value="" /><br />
+					<input type="number" name="array2[]" value="" /><br />
+				</form>
+			</div>
+			<div id="argument_myMap"></div>
+			<div id="result_myMap">
+				<p id="originalArray2"></p>
+				<p id="resultArray2"></p>
+			</div>
+			<button id="run_myMap" onclick="demo2()">
+				Demonstrate "myMap" Function
+			</button>
 		</div>
 
-		<div id="myFilter">
-			<div id="input"></div>
-			<div id="argument"></div>
-			<div id="result"></div>
-			<button id="run_myFilter"></button>
+		<div class="myFilter">
+			<div id="input_myFilter">
+				<h3 id="po">Input Array Elements of Type String</h3>
+				<form class="" action="abdullah.html" method="post">
+					<input type="text" name="array3[]" value="" /><br />
+					<input type="text" name="array3[]" value="" /><br />
+					<input type="text" name="array3[]" value="" /><br />
+					<input type="text" name="array3[]" value="" /><br />
+					<input type="text" name="array3[]" value="" /><br />
+					<button type="button" name="submit3" onclick="Geeks()">
+						Submit
+					</button>
+				</form>
+			</div>
+			<div id="argument_myFilter"></div>
+			<div id="result_myFilter"></div>
+			<button id="run_myFilter">Demonstrate "myFilter" Function</button>
 		</div>
 	</body>
 </html>
