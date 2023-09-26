@@ -1,51 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="thanemul.css">
-    <title>Array Methods</title>
-</head>
-<body>
-    <div class="method-container">
-        <h2>myIncludes</h2>
-        <div>
-            <input type="text" id="inputArray" placeholder="Enter an array">
-            <input type="text" id="includesArg" placeholder="Element to check">
-            <button onclick="runMyIncludes()">Run myIncludes</button>
-        </div>
-        <div>
-            <h3>Result:</h3>
-            <div id="includesResult"></div>
-        </div>
-    </div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/thanemul.css" />
+		<title>Array Methods</title>
+		<script src="thanemul.js"></script>
+	</head>
+	<body>
+		<div class="method-container">
+			<h2>myIncludes</h2>
+			<div>
+				<input
+					type="text"
+					id="inputArray"
+					placeholder="Enter an array"
+				/>
+				<input
+					type="text"
+					id="includesArg"
+					placeholder="Element to check"
+				/>
+				<button onclick="runMyIncludes()">Run myIncludes</button>
+			</div>
+			<div>
+				<h3>Result:</h3>
+				<div id="includesResult"></div>
+			</div>
+		</div>
 
-    <div class="method-container">
-        <h2>myIndexOf</h2>
-        <div>
-            <input type="text" id="indexArray" placeholder="Enter an array">
-            <input type="text" id="indexOfArg" placeholder="Element to find">
-            <button onclick="runMyIndexOf()">Run myIndexOf</button>
-        </div>
-        <div>
-            <h3>Result:</h3>
-            <div id="indexOfResult"></div>
-        </div>
-    </div>
+		<div class="method-container">
+			<h2>myIndexOf</h2>
+			<div>
+				<input
+					type="text"
+					id="indexArray"
+					placeholder="Enter an array"
+				/>
+				<input
+					type="text"
+					id="indexOfArg"
+					placeholder="Element to find"
+				/>
+				<button onclick="runMyIndexOf()">Run myIndexOf</button>
+			</div>
+			<div>
+				<h3>Result:</h3>
+				<div id="indexOfResult"></div>
+			</div>
+		</div>
 
-    <div class="method-container">
-        <h2>myPush</h2>
-        <div>
-            <input type="text" id="pushArray" placeholder="Enter an array">
-            <input type="text" id="pushArg" placeholder="Element to push">
-            <button onclick="runMyPush()">Run myPush</button>
-        </div>
-        <div>
-            <h3>Result:</h3>
-            <div id="pushResult"></div>
-        </div>
-    </div>
-
-    <script src="thanemul.js"></script>
-</body>
+		<div class="method-container">
+			<h2>myPush</h2>
+			<div>
+				<input
+					type="text"
+					id="pushArray"
+					placeholder="Enter an array"
+				/>
+				<input type="text" id="pushArg" placeholder="Element to push" />
+				<button onclick="runMyPush()">Run myPush</button>
+			</div>
+			<div>
+				<h3>Result:</h3>
+				<div id="pushResult"></div>
+			</div>
+		</div>
+		<div>
+			<a href="index.html"> Back To Home Page</a>
+		</div>
+	</body>
 </html>

@@ -57,15 +57,28 @@ function demo2() {
 
 // myFilter Demonstration
 function demo3() {
-	var input = document.getElementsByName("array[]");
+	const input = Array.from(document.getElementsByName("array3[]"));
+	const result = input.myFilter((word) => word.value.length > 6);
 
-	for (var i = 0; i < input.length; i++) {
-		var a = input[i];
-		k = k + "array[" + i + "].value= " + a.value + " ";
+	// Create output strings for result Div
+	let inputString = "Input Array Values: ";
+	let resultString = "Result Array Values: ";
+
+	// Loop through input Array and create inputString
+	for (let i = 0; i < input.length; i++) {
+		let a = input[i];
+		inputString = inputString + "input[" + i + "] = " + a.value + " ";
 	}
 
-	document.getElementById("par").innerHTML = k;
-	document.getElementById("po").innerHTML = "Output";
+	// Loop through result Array and create resultString
+	for (let i = 0; i < result.length; i++) {
+		let b = result[i];
+		resultString = resultString + "result[" + i + "] = " + b.value + " ";
+	}
+
+	// Insert the output strings onto HTML
+	document.getElementById("originalArray3").innerHTML = inputString;
+	document.getElementById("resultArray3").innerHTML = resultString;
 }
 
 // myEach() implementation
