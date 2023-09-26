@@ -22,9 +22,8 @@
 			</div>
 			<div id="argument_myEach">
 				<p>
-					The function invoked on this specific array multiplies each
-					element by 2, and then pushes each element into a result
-					array.
+					The callback function pushes double the value of the element
+					into a new result array.
 				</p>
 			</div>
 			<div id="result_myEach">
@@ -49,7 +48,10 @@
 				</form>
 			</div>
 			<div id="argument_myMap">
-				<p>This function creates a new result array and.</p>
+				<p>
+					The callback function maps the x^3 function to each element
+					in the array.
+				</p>
 			</div>
 			<div id="result_myMap">
 				<p id="originalArray2"></p>
@@ -71,13 +73,18 @@
 					<input type="text" name="array3[]" value="" /><br />
 				</form>
 			</div>
-			<div id="argument_myFilter"></div>
+			<div id="argument_myFilter">
+				<p>
+					The callback function filters out words that have a length
+					less than 7 characters.
+				</p>
+			</div>
 			<div id="result_myFilter">
 				<p id="originalArray3"></p>
 				<p id="resultArray3"></p>
 			</div>
 			<button id="run_myFilter" onclick="demo3()">
-				Demonstrate "myMap" Function
+				Demonstrate "myFilter" Function
 			</button>
 		</div>
 
