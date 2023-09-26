@@ -1,5 +1,7 @@
 # 39548-Assignment-2
 
+Source Link: https://af-foysal.github.io/39548-Assignment-2/
+
 Goal:
 
 To improve your understanding of JavaScript syntax and functions, and to better understand JavaScript and Array methods.
