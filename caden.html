@@ -3,31 +3,48 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel ="stylesheet" href="css/caden.css" />
+		<link rel="stylesheet" href="css/caden.css" />
 		<title>Caden's Functions</title>
-        <script src = "caden.js"></script>
+		<script src="caden.js"></script>
 	</head>
 	<body>
-        <h1>Custom Array Functions Demo</h1>
+		<h1>Custom Array Functions Demo</h1>
 
-        <h2>myReduce</h2>
-        <p>Enter a list of integers for an array separated by commas (e.g., 5,8,15,3,7) (this function will return the sum of all elements):</p>
-        <input type="text" id="inputArrayReduce" placeholder="Enter numbers">
-        <button onclick="calculateSum()">Calculate Sum</button>
-        <div id="outputReduce"></div>
-    
-        <h2>myEvery</h2>
-        <p>Enter a list of integers for an array separated by commas (e.g., 5,8,15,3,7) (this function will return true if all elements are less than 40):</p>
-        <input type="text" id="inputArrayEvery" placeholder="Enter numbers">
-        <button onclick="checkEvery()">Check Every</button>
-        <div id="outputEvery"></div>
-    
-        <h2>mySome</h2>
-        <p>Enter a list of integers for an array separated by commas (e.g., 5,8,15,3,7) (this function will return true if any of the elements are greater than 10):</p>
-        <input type="text" id="inputArraySome" placeholder="Enter numbers">
-        <button onclick="checkSome()">Check Some</button>
-        <div id="outputSome"></div>
-		<div> 
+		<h2>myReduce</h2>
+		<p>
+			Enter a list of integers for an array separated by commas (e.g.,
+			5,8,15,3,7) (this function will return the sum of all elements):
+		</p>
+		<input type="text" id="inputArrayReduce" placeholder="Enter numbers" />
+		<button onclick="calculateSum()">Calculate Sum</button>
+		<div id="outputReduce">
+			<p id="output_reduce"></p>
+		</div>
+
+		<h2>myEvery</h2>
+		<p>
+			Enter a list of integers for an array separated by commas (e.g.,
+			5,8,15,3,7) (this function will return true if all elements are less
+			than 40):
+		</p>
+		<input type="text" id="inputArrayEvery" placeholder="Enter numbers" />
+		<button onclick="checkEvery()">Check Every</button>
+		<div id="outputEvery">
+			<p id="output_every"></p>
+		</div>
+
+		<h2>mySome</h2>
+		<p>
+			Enter a list of integers for an array separated by commas (e.g.,
+			5,8,15,3,7) (this function will return true if any of the elements
+			are greater than 10):
+		</p>
+		<input type="text" id="inputArraySome" placeholder="Enter numbers" />
+		<button onclick="checkSome()">Check Some</button>
+		<div id="outputSome">
+			<p id="output_some"></p>
+		</div>
+		<div>
 			<a href="index.html"> Back To Home Page</a>
 		</div>
 	</body>
