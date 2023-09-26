@@ -8,16 +8,12 @@ Array.prototype.mySome = function mySome(condition) {
 }
 
 Array.prototype.myEvery = function myEvery(condition) {
-    let count = 0;
     for (let i = 0; i < this.length; i++) { 
-        if (condition(this[i])) { // if condition is true then return true
-            count++;
+        if (!condition(this[i])) { // if condition is true then return true
+            return false;
         }
     }
-    if (count === this.length) {
-        return true;
-    }
-    return false;
+    return true;
 }
 
 Array.prototype.myReduce = function myReduce(callBack) {
