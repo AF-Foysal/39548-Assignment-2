@@ -3,11 +3,74 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>JoshuaRamcharan Assignment 2</title>
+    <link rel="stylesheet" href="css/josh.css" />
   </head>
   <body>
+    <h2>myLastIndexOf(target,array):</h2>
+    <div>
+      <label
+        >Enter numbers followed by spaces to create array for function
+        myLastIndexOf():
+      </label>
+      <br />
+      <input type="text" id="lastIndexText" /><br />
+    </div>
+    <div>
+      <label
+        >Enter single target element with no spaces for myLastIndexOf():
+      </label>
+      <br />
+      <input type="text" id="lastIndexArgument" /><br />
+    </div>
+
+    <div>
+      <button type="button" id="lastIndexButton">
+        Find Last Index of Number
+      </button>
+    </div>
+
+    <div>
+      <label>Last Index of Target: </label>
+      <textarea class="lastIndexResult"></textarea>
+    </div>
+    <br />
+    <br />
+
+    <h2>grabKeys(object):</h2>
+    <label>Input Object (Not Customizable): </label>
+    <br />
+    <div class="box">
+      <img src="ObjectSample.png" />
+    </div>
+    <div>
+      <button type="button" id="keys-button">Find Keys of Object</button>
+    </div>
+    <br />
+    <div>
+      <label>Keys: </label>
+      <textarea class="keys-result"></textarea>
+    </div>
+    <br />
+
+    <h2>grabValues(object):</h2>
+    <label>Input Object (Not Customizable): </label>
+    <br />
+    <div class="box">
+      <img src="ObjectSample.png" />
+    </div>
+    <div>
+      <button type="button" id="values-button">Find Values of Object</button>
+    </div>
+    <br />
+    <div>
+      <label>Values: </label>
+      <textarea class="values-result"></textarea>
+    </div>
+    <br />
+    <div>
+      <a href="index.html"> Back To Home Page</a>
+    </div>
   </body>
-  <script>
-    src = "josh.js";
-  </script>
+  <script src="josh.js"></script>
 </html>
