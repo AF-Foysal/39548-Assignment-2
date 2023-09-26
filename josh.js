@@ -1,19 +1,21 @@
+//Code Below Written by Joshua Ramcharan
 const object1 = {
   a: "some",
   duh: "bruh",
   brown: "people",
 };
-function parsedArray(text){
+
+function parsedArray(text) {
   const splitArray = text.split(" ");
   const parsedArr = [];
   let x = 0;
-  for(let i = 0; i < splitArray.length; i++)
-  {
+  for (let i = 0; i < splitArray.length; i++) {
     x = Number(splitArray[i]);
     parsedArr.push(x);
   }
   return parsedArr;
 }
+
 function myLastIndexOf(target, arr) {
   let lastIndex = 0;
   if (arr.includes(target)) {
@@ -44,19 +46,26 @@ function grabValues(obj1) {
   return values;
 }
 
-const arr = [1, 2, 3, 4, 5];
-console.log("First Test: ", myLastIndexOf(4, arr));
-console.log("----------------------------");
+const lastOfButton = document.body.querySelector("#lastIndexButton");
+const lastIndexResult = document.body.querySelector(".lastIndexResult");
 
-console.log("Second Test: ", grabKeys(object1));
-console.log("----------------------------");
+lastOfButton.addEventListener("click", () => {
+  var userArr = document.getElementById("lastIndexText").value;
+  var userTarget = document.getElementById("lastIndexArgument").value;
+  const numTarget = Number(userTarget);
+  console.log(userArr);
+  console.log(userTarget);
+  const lastIndexOf = myLastIndexOf(numTarget, parsedArray(userArr));
+  lastIndexResult.textContent = lastIndexOf;
+});
 
-console.log("Third Test: ", grabValues(object1));
-console.log("----------------------------");
-console.log("Fourth Test: ", parsedArray("1 2 3 4 5"));
+// const arr = [1, 2, 3, 4, 5];
+// console.log("First Test: ", myLastIndexOf(4, arr));
+// console.log("----------------------------");
 
+// console.log("Second Test: ", grabKeys(object1));
+// console.log("----------------------------");
 
-
-document.getElementById("lastIndexButton").onClick = function() {
-  
-}
+// console.log("Third Test: ", grabValues(object1));
+// console.log("----------------------------");
+// console.log("Fourth Test: ", parsedArray("1 2 3 4 5"));
