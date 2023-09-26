@@ -1,8 +1,8 @@
 //Code Below Written by Joshua Ramcharan
 const object1 = {
-  a: "some",
-  duh: "bruh",
-  brown: "people",
+  apple: "green",
+  banana: "yellow",
+  peach: "orange",
 };
 
 function parsedArray(text) {
@@ -59,13 +59,28 @@ lastOfButton.addEventListener("click", () => {
   lastIndexResult.textContent = lastIndexOf;
 });
 
-// const arr = [1, 2, 3, 4, 5];
-// console.log("First Test: ", myLastIndexOf(4, arr));
-// console.log("----------------------------");
+const keysButton = document.body.querySelector("#keys-button");
+const keysResult = document.body.querySelector(".keys-result");
+keysButton.addEventListener("click", () => {
+  keysResult.textContent = grabKeys(object1);
+});
 
-// console.log("Second Test: ", grabKeys(object1));
-// console.log("----------------------------");
+const valueButton = document.body.querySelector("#values-button");
+const valuesResult = document.body.querySelector(".values-result");
+valueButton.addEventListener("click", () => {
+  valuesResult.textContent = grabValues(object1);
+});
 
-// console.log("Third Test: ", grabValues(object1));
-// console.log("----------------------------");
-// console.log("Fourth Test: ", parsedArray("1 2 3 4 5"));
+/* **** TESTS **********
+
+  const arr = [1, 2, 3, 4, 5];
+  console.log("First Test: ", myLastIndexOf(4, arr));
+  console.log("----------------------------");
+
+  console.log("Second Test: ", grabKeys(object1));
+  console.log("----------------------------");
+
+  console.log("Third Test: ", grabValues(object1));
+  console.log("----------------------------");
+  console.log("Fourth Test: ", parsedArray("1 2 3 4 5"));
+*/
